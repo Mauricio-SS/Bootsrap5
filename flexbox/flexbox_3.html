@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Bootstrap 5</title>
+    <style>
+       .contenedor{margin-bottom: 20px;
+            background: #0d6efd;
+            color: #fff;
+            min-height: 100px;
+        }
+        .contenedor > div {
+            background: rgba(255, 255, 255, .2);
+            padding: 15px 20px;
+            border: solid 1px #0d6efd;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row my-5">
+            <div class="col">
+                <h4>wrap</h4>
+                <hr>
+
+                <p>.flex-nowrap</p>
+                <!--Integrar todas las cajas en una sola fila del contenedor-->
+                <div class="contenedor d-flex flex-nowrap">
+                    <div class="">caja 1</div>
+                    <div class="">caja 2</div>
+                    <div class="">caja 3</div>
+                    <div class="">caja 4</div>
+                    <div class="">caja 5</div>
+                    <div class="">caja 6</div>
+                    <div class="">caja 7</div>
+                    <div class="">caja 8</div>
+                    <div class="">caja 9</div>
+                    <div class="">caja 10</div>
+                    <div class="">caja 11</div>
+                    <div class="">caja 12</div>
+                    <div class="">caja 13</div>
+                    <div class="">caja 14</div>
+                    <div class="">caja 15</div>
+                    <div class="">caja 16</div>
+                </div>
+
+                <p>.flex-wrap</p>
+                <!--utilizar el espacio que sea necesario utilizando más de una fila-->
+                <div class="contenedor d-flex flex-wrap">
+                    <div class="">caja 1</div>
+                    <div class="">caja 2</div>
+                    <div class="">caja 3</div>
+                    <div class="">caja 4</div>
+                    <div class="">caja 5</div>
+                    <div class="">caja 6</div>
+                    <div class="">caja 7</div>
+                    <div class="">caja 8</div>
+                    <div class="">caja 9</div>
+                    <div class="">caja 10</div>
+                    <div class="">caja 11</div>
+                    <div class="">caja 12</div>
+                    <div class="">caja 13</div>
+                    <div class="">caja 14</div>
+                    <div class="">caja 15</div>
+                    <div class="">caja 16</div>
+                </div>
+
+                <p>.flex-wrap-reverse</p>
+                <!--Pone las cajas de izquierda a derecha de abajo hacia arriba utilizando los espacios necesarios-->
+                <div class="contenedor d-flex flex-wrap-reverse">
+                    <div class="">caja 1</div>
+                    <div class="">caja 2</div>
+                    <div class="">caja 3</div>
+                    <div class="">caja 4</div>
+                    <div class="">caja 5</div>
+                    <div class="">caja 6</div>
+                    <div class="">caja 7</div>
+                    <div class="">caja 8</div>
+                    <div class="">caja 9</div>
+                    <div class="">caja 10</div>
+                    <div class="">caja 11</div>
+                    <div class="">caja 12</div>
+                    <div class="">caja 13</div>
+                    <div class="">caja 14</div>
+                    <div class="">caja 15</div>
+                    <div class="">caja 16</div>
+                </div>
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col">
+                <h4>Order</h4>
+                <hr>
+                <!--Cambiar el orden de las cajas-->
+                <div class="contenedor d-flex flex-nowrap">
+                    <div class="order-2">caja 1</div>
+                    <div class="order-3">caja 2</div>
+                    <div class="order-1">caja 3</div>
+                </div>
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col">
+                <!--Solo funciona si incluye la clase wrap-->
+                <h4>Align content</h4>
+                <hr>
+                <p>.align-content-start</p>
+                <!--Alinear verticalmente al inicio-->
+                <div class="contenedor d-flex flex-wrap align-content-start" style="height: 200px;">
+                    <div class="">caja 1</div>
+                    <div class="">caja 2</div>
+                    <div class="">caja 3</div>
+                    <div class="">caja 4</div>
+                    <div class="">caja 5</div>
+                    <div class="">caja 6</div>
+                    <div class="">caja 7</div>
+                    <div class="">caja 8</div>
+                    <div class="">caja 9</div>
+                    <div class="">caja 10</div>
+                    <div class="">caja 11</div>
+                    <div class="">caja 12</div>
+                    <div class="">caja 13</div>
+                    <div class="">caja 14</div>
+                    <div class="">caja 15</div>
+                    <div class="">caja 16</div>
+                </div>
+                <!--Alinear verticalmente al centro-->
+                <p>.align-content-center</p>
+                <div class="contenedor d-flex flex-wrap align-content-center" style="height: 200px;">
+                    <div class="">caja 1</div>
+                    <div class="">caja 2</div>
+                    <div class="">caja 3</div>
+                    <div class="">caja 4</div>
+                    <div class="">caja 5</div>
+                    <div class="">caja 6</div>
+                    <div class="">caja 7</div>
+                    <div class="">caja 8</div>
+                    <div class="">caja 9</div>
+                    <div class="">caja 10</div>
+                    <div class="">caja 11</div>
+                    <div class="">caja 12</div>
+                    <div class="">caja 13</div>
+                    <div class="">caja 14</div>
+                    <div class="">caja 15</div>
+                    <div class="">caja 16</div>
+                </div>
+                <!--Alinear verticalmente al final-->
+                <p>.align-content-end</p>
+                <div class="contenedor d-flex flex-wrap align-content-end" style="height: 200px;">
+                    <div class="">caja 1</div>
+                    <div class="">caja 2</div>
+                    <div class="">caja 3</div>
+                    <div class="">caja 4</div>
+                    <div class="">caja 5</div>
+                    <div class="">caja 6</div>
+                    <div class="">caja 7</div>
+                    <div class="">caja 8</div>
+                    <div class="">caja 9</div>
+                    <div class="">caja 10</div>
+                    <div class="">caja 11</div>
+                    <div class="">caja 12</div>
+                    <div class="">caja 13</div>
+                    <div class="">caja 14</div>
+                    <div class="">caja 15</div>
+                    <div class="">caja 16</div>
+                </div>
+                <!--Dividir el espacio sobrante del contenedor al centro-->
+                <p>.align-content-between</p>
+                <div class="contenedor d-flex flex-wrap align-content-between" style="height: 200px;">
+                    <div class="">caja 1</div>
+                    <div class="">caja 2</div>
+                    <div class="">caja 3</div>
+                    <div class="">caja 4</div>
+                    <div class="">caja 5</div>
+                    <div class="">caja 6</div>
+                    <div class="">caja 7</div>
+                    <div class="">caja 8</div>
+                    <div class="">caja 9</div>
+                    <div class="">caja 10</div>
+                    <div class="">caja 11</div>
+                    <div class="">caja 12</div>
+                    <div class="">caja 13</div>
+                    <div class="">caja 14</div>
+                    <div class="">caja 15</div>
+                    <div class="">caja 16</div>
+                </div>
+                <!--agregar espacios arriba, al centro y al final-->
+                <p>.align-content-around</p>
+                <div class="contenedor d-flex flex-wrap align-content-around" style="height: 200px;">
+                    <div class="">caja 1</div>
+                    <div class="">caja 2</div>
+                    <div class="">caja 3</div>
+                    <div class="">caja 4</div>
+                    <div class="">caja 5</div>
+                    <div class="">caja 6</div>
+                    <div class="">caja 7</div>
+                    <div class="">caja 8</div>
+                    <div class="">caja 9</div>
+                    <div class="">caja 10</div>
+                    <div class="">caja 11</div>
+                    <div class="">caja 12</div>
+                    <div class="">caja 13</div>
+                    <div class="">caja 14</div>
+                    <div class="">caja 15</div>
+                    <div class="">caja 16</div>
+                </div>
+                <!--abarcar el 100% del alto que puedan-->
+                <p>.align-content-stretch</p>
+                <div class="contenedor d-flex flex-wrap align-content-stretch" style="height: 200px;">
+                    <div class="">caja 1</div>
+                    <div class="">caja 2</div>
+                    <div class="">caja 3</div>
+                    <div class="">caja 4</div>
+                    <div class="">caja 5</div>
+                    <div class="">caja 6</div>
+                    <div class="">caja 7</div>
+                    <div class="">caja 8</div>
+                    <div class="">caja 9</div>
+                    <div class="">caja 10</div>
+                    <div class="">caja 11</div>
+                    <div class="">caja 12</div>
+                    <div class="">caja 13</div>
+                    <div class="">caja 14</div>
+                    <div class="">caja 15</div>
+                    <div class="">caja 16</div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

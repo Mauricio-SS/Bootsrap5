@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Bootstrap 5</title>
+    <style>
+        .contenedor{margin-bottom: 20px;
+            background: #0d6efd;
+            color: #fff;
+        }
+        .contenedor > div {
+            background: rgba(255, 255, 255, .2);
+            padding: 15px;
+            border: solid 1px #0d6efd;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row my-5">
+            <div class="col">
+                <h4>Tipos de display flex</h4>
+                <hr>
+                <div class="bg-primary text-white p-3 d-flex">
+                    <p class="mb-0">Display <strong>.d-flex</strong> </p>
+                </div>
+
+                <br>
+
+                <div class="bg-primary text-white p-3 d-inline-flex">
+                    <p class="mb-0">Display Inline Flex <strong>.d-inline-flex</strong> </p>
+                </div>
+            </div>
+        </div>
+        <div class="row my-5 ">
+            <div class="col">
+                <h4>Direction</h4>
+                <hr>
+                <p>.flex-row</p>
+                <div class="contenedor d-flex flex-row">
+                    <div>caja 1</div>
+                    <div>caja 2</div>
+                    <div>caja 3</div>
+                </div>
+                <p>.flex-row-reverse</p>
+                <div class="contenedor d-flex flex-row-reverse">
+                    <div>caja 1</div>
+                    <div>caja 2</div>
+                    <div>caja 3</div>
+                </div>
+                <p>.flex-column</p>
+                <div class="contenedor d-flex flex-column">
+                    <div>caja 1</div>
+                    <div>caja 2</div>
+                    <div>caja 3</div>
+                </div>
+                <p>.flex-column-reverse</p>
+                <div class="contenedor d-flex flex-column-reverse">
+                    <div>caja 1</div>
+                    <div>caja 2</div>
+                    <div>caja 3</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row my-5">
+            <div class="col">
+                <h4>Justify Content</h4>
+                <hr>
+                <p>.justify-content-start</p>
+                <div class="contenedor d-flex justify-content-start">
+                    <div>caja 1</div>
+                    <div>caja 2</div>
+                    <div>caja 3</div>
+                </div>
+                <!--Alinear al centro-->
+                <p>.justify-content-center</p>
+                <div class="contenedor d-flex justify-content-center">
+                    <div>caja 1</div>
+                    <div>caja 2</div>
+                    <div>caja 3</div>
+                </div>
+                 <!--Alinear al final-->
+                 <p>.justify-content-end</p>
+                 <div class="contenedor d-flex justify-content-end">
+                     <div>caja 1</div>
+                     <div>caja 2</div>
+                     <div>caja 3</div>
+                 </div>
+                 <!--Distribuir espacios entre cajas-->
+                 <p>.justify-content-between</p>
+                 <div class="contenedor d-flex justify-content-between">
+                     <div>caja 1</div>
+                     <div>caja 2</div>
+                     <div>caja 3</div>
+                     <div>caja 4</div>
+                 </div>
+                 <!--Distribuir espacios de principio a fin, agrega espacios al principio y al final-->
+                 <p>.justify-content-around</p>
+                 <div class="contenedor d-flex justify-content-around">
+                     <div>caja 1</div>
+                     <div>caja 2</div>
+                     <div>caja 3</div>
+                 </div>
+                 <!--Distribuir espacios de principio a fin, agrega espacios al principio y al final de manera proporcional-->
+                 <p>.justify-content-evenly</p>
+                 <div class="contenedor d-flex justify-content-evenly">
+                     <div>caja 1</div>
+                     <div>caja 2</div>
+                     <div>caja 3</div>
+                 </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

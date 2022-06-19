@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Bootstrap 5</title>
+    <style>
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col">
+                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#my-modal">Abrir modal 1</button>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#my-modal-1">Abrir modal 2</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="my-modal" tabindex="-1" aria-hidden="true" aria-labelledby="label-modal1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Titulo del modal</h5>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="moddal-body">
+                    <h1>Hola Mundo</h1>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Guardar</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" >Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="modal fade" id="my-modal-1" tabindex="-1" aria-hidden="true" aria-labelledby="label-modal2" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Titulo del modal</h5>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="moddal-body">
+                    <div >
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, itaque?
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Guardar</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" >Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

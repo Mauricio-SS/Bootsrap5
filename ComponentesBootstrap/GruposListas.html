@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Bootstrap 5</title>
+    <style>
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row mt-3 mb-3">
+            <div class="col">
+                <!--Grupo de lista-->
+                <ul class="list-group">
+                    <li class="list-group-item active">Elemento 1</li>
+                    <li class="list-group-item disabled">Elemento 2</li>
+                    <li class="list-group-item">Elemento 3</li>
+                </ul>
+            </div>
+            <div class="col">
+                <!--Lista con enlaces-->
+                <ul class="list-group" >
+                    <a href="#" class="list-group-item list-group-item-action disabled">Elemento 1</a>
+                    <a href="#" class="list-group-item list-group-item-action">Elemento 2</a>
+                    <a href="#" class="list-group-item list-group-item-action active">Elemento 3</a>
+                </ul>
+            </div>
+            <div class="col">
+                <!--Grupo de lista sin bordes externos-->
+                <ul class="list-group list-group-flush ">
+                    <li class="list-group-item ">Elemento 1</li>
+                    <li class="list-group-item ">Elemento 2</li>
+                    <li class="list-group-item">Elemento 3</li>
+                </ul>
+            </div>
+            <div class="col">
+                <!--Grupo de lista con numeros-->
+                <ul class="list-group list-group-numbered">
+                    <li class="list-group-item ">Elemento 1</li>
+                    <li class="list-group-item ">Elemento 2</li>
+                    <li class="list-group-item">Elemento 3</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <ul class="list-group ">
+                    <li class="list-group-item list-group-item-primary">elemento 1</li>
+                    <li class="list-group-item list-group-item-secondary">elemento 2</li>
+                    <li class="list-group-item list-group-item-success">elemento 3</li>
+                    <li class="list-group-item list-group-item-danger">elemento 4</li>
+                    <li class="list-group-item list-group-item-warning">elemento 5</li>
+                    <li class="list-group-item list-group-item-info">elemento 6</li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul class="list-group">
+                    <a href="#" class="list-group-item listgroup-item-action list-group-item-light">elemento 1</a>
+                    <a href="#" class="list-group-item listgroup-item-action list-group-item-dark">elemento 2</a>
+                    <a href="#" class="list-group-item listgroup-item-action list-group-item-info">elemento 3</a>
+                    <a href="#" class="list-group-item listgroup-item-action list-group-item-warning">elemento 4</a>
+                    <a href="#" class="list-group-item listgroup-item-action list-group-item-danger">elemento 5</a>
+                    <a href="#" class="list-group-item listgroup-item-action list-group-item-success">elemento 6</a>
+                </ul>
+            </div>
+            <!--Listas con badges y checkbox-->
+            <div class="col">
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Elemento 1 
+                        <span class="badge bg-danger">Más vendido</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Elemento 1 
+                        <span class="badge bg-info">Recomendado</span>
+                    </li>
+                    <label class="list-group-item">
+                        <input type="checkbox" class="form-check-input me-1">
+                        Obtener suscripción premium
+                    </label>
+                </ul>
+            </div>
+            <div class="col">
+                <!--Lista personalizada-->
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex justify-content-between">
+                            <h5>Titulo</h5>
+                            <small>hace 1 dia</small>
+                        </div>
+                        <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        <small class="text-muted">ver mas</small>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex justify-content-between">
+                            <h5>Titulo</h5>
+                            <small>hace 1 dia</small>
+                        </div>
+                        <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        <small class="text-muted">ver mas</small>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex justify-content-between">
+                            <h5>Titulo</h5>
+                            <small>hace 1 dia</small>
+                        </div>
+                        <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        <small class="text-muted">ver mas</small>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
